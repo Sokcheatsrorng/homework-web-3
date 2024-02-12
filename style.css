@@ -41,7 +41,7 @@ header {
   padding: 10px;
   border: 1px solid gray;
   font-size: 14px;
-  width: 600px;
+  width: 60%;
   border-radius: 10px;
 }
 .btn {
@@ -66,7 +66,6 @@ header {
   margin-top: 0px;
   justify-content: center;
   padding: 20px;
-  
 }
 .grid-item {
   padding: 5px;
@@ -87,15 +86,22 @@ header {
   transform: scale(1.05); 
 }
 /* Responsive layout for iPhone 12 Pro */
-@media screen and (max-width: 428px) {
+@media (max-width: 575px) {
   .navbar {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: stretch; /* Stretch items to full width */
+    /* align-items: stretch; /* Stretch items to full width */
+    /* width: 80vw; */
+    margin: 5px;
   }
-
   .search-container {
+    /* width: 20vw; */
     margin-right: 0; /* Reset margin for search container */
-    margin-bottom: 10px; /* Add spacing between items */
+    /* margin-bottom: 10px; Add spacing between items */
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
